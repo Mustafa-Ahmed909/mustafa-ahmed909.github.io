@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">
+        </div>
+       
+        <div class="social-icons">
+            <ul>
+                <a href="https://www.instagram.com/mustafa_ahmed_q/?hl=ru"><li><i class="fa fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/profile.php?id=100006195390990"><li><i class="fa fa-facebook"></i></li></a>
+            </ul>
+        </div>
+       
+    </nav>
+    <div class="toggle-btn">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- Header -->
+    <header class="header container">
+        <div class="circle"></div>
+        <div class="row hero">
+            <div class="col col-1">
+                <h1>Hey, I’m Mustafa Ahmed <span class="highlight">Flutter</span> developer. </h1>
+             
+            </div>
+            <div class="col col-2">
+                <div class="hero-img">
+                    <img src="./img/pho1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="container">
+            <h3>CONTACT ME</h3>
+            <h1>Got A Project! Let's Talk</h1>
+            <h3><i class="fa fa-envelope-o"></i> mustafaahmedq3@gmail.com </h3>
+            <div class="quick-links">
+            </div>
+        </div>
+        
+    </section>
+
+ 
+    
+    <script>
+        let togglebtn = document.querySelector('.toggle-btn')
+        let navbar = document.querySelector('.navbar')
+
+        togglebtn.addEventListener('click', ()=>{
+            navbar.classList.toggle('mobile-nav')
+        } )
+    </script>
+</body>
+</html>
